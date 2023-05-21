@@ -44,3 +44,21 @@ RUN apt-cache dumpavail | dpkg --merge-avail
 RUN dpkg --set-selections < /packages/Package.list
 RUN DEBIAN_FRONTEND=noninteractive apt-get dselect-upgrade -y --yes --force-yes --allow-unauthenticated
 
+# USER root
+# RUN hostname debian
+
+RUN apt-get install -y sudo
+RUN apt-get install -y zsh
+
+# RUN groupadd --gid 1000 debian
+# RUN useradd -rm -d /home/debian -s /bin/bash -g debian -G sudo -u 1000 debian
+RUN groupadd --gid 1000 debian \
+    && useradd --uid 1000 --gid debian --shell /bin/bash --create-home debian
+RUN usermod -a -G sudo debian
+# RUN passwd 
+RUN echo "debian:debian" | chpasswd
+
+USER debian
+
+WORKDIR /home/debian
+
