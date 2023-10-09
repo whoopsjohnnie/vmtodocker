@@ -98,6 +98,7 @@ gcc-10						install
 gcc-10-base:amd64				install
 gcc-9-base:amd64				install
 geoip-database					install
+gettext						install
 gettext-base					install
 ghostscript					install
 git						install
@@ -126,7 +127,12 @@ gsasl-common					install
 gsettings-desktop-schemas			install
 gsfonts						install
 gtk-update-icon-cache				install
+guile-2.2					install
+guile-2.2-doc					install
 guile-2.2-libs:amd64				install
+guile-3.0					install
+guile-3.0-doc					install
+guile-3.0-libs:amd64				install
 gzip						install
 hicolor-icon-theme				install
 hostname					install
@@ -360,6 +366,7 @@ libmpc3:amd64					install
 libmpdec3:amd64					install
 libmpfr6:amd64					install
 libmsgpackc2:amd64				install
+libncurses-dev:amd64				install
 libncurses6:amd64				install
 libncursesw6:amd64				install
 libnetfilter-conntrack3:amd64			install
@@ -486,6 +493,7 @@ libwayland-egl1:amd64				install
 libwebp6:amd64					install
 libwebpdemux2:amd64				install
 libwebpmux3:amd64				install
+libwhereami0:amd64				install
 libwrap0:amd64					install
 libx11-6:amd64					install
 libx11-data					install
@@ -568,6 +576,9 @@ mc-data						install
 media-types					install
 mesa-vulkan-drivers:amd64			install
 mime-support					install
+mit-scheme:amd64				install
+mit-scheme-dbg:amd64				install
+mit-scheme-doc					install
 mokutil						install
 mount						install
 mysql-common					install
@@ -579,6 +590,7 @@ ncurses-term					install
 neofetch					install
 neovim						install
 neovim-runtime					install
+net-tools					install
 netbase						install
 netcat-traditional				install
 nfs-common					install
@@ -609,6 +621,7 @@ perl-base					install
 perl-modules-5.32				install
 pigz						install
 pinentry-curses					install
+pipenv						install
 poppler-data					install
 procps						install
 psmisc						install
@@ -648,6 +661,7 @@ python3-setuptools				install
 python3-six					install
 python3-urllib3					install
 python3-virtualenv				install
+python3-virtualenv-clone			install
 python3-wheel					install
 python3-zipp					install
 python3.9					install
@@ -708,6 +722,7 @@ xorg-sgml-doctools				install
 xtrans-dev					install
 xxd						install
 xz-utils					install
+yabasic						install
 zlib1g:amd64					install
 zlib1g-dev:amd64				install
 zsh						install
